@@ -1,0 +1,210 @@
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    align-items: center;
+    background-color: #3D5774;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    border-bottom: white solid 2px;
+}
+
+.logo {
+    display: flex;
+    color: #F7A797;
+    padding: 1rem 1.5rem;
+    margin: 0rem;
+    font-family: 'Fredoka', sans-serif;
+    width: 20rem;
+    float: left;
+}
+
+nav ul{
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+    list-style-type: none;
+    float: right;
+    margin-right: 2rem;
+    width: 50%;
+}
+
+nav ul li {
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+header nav li:hover {
+    color: #F7A797;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:850px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    header nav ul{
+        float: none;
+        padding: 0;
+        display: grid;
+        grid-template: repeat(3, 1fr) / 1fr 1fr;
+        margin: 0;
+        justify-items: center;
+    }
+
+    header h1 {
+        display: none !important;
+    }
+    
+    header nav li {
+        padding: 0.3rem 4rem;
+
+    }
+
+    #cv {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    #about {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    #projects {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+    #feedback {
+        grid-area: 1 / 2 / span 1 / span 1;
+    }
+    #contact {
+        grid-area: 2 / 2 / span 1 / span 1;
+    }
+}
+
+.landing-page {
+    height: 50rem;
+    background-image: url('Resources/constellations.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    background-color: pink;
+    position: relative;
+    opacity: 0.5;
+}
+
+.avatar {
+    background: url("Resources/pixel-avatar.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    padding: 0;
+    margin-bottom: 0;
+    font-weight: 800;
+}
+
+h2 {
+    padding: 0;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.social-circle {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    margin: 0rem 1rem;
+    cursor: pointer;
+}
+
+#linkedin {
+    background-image: url('Resources/LinkedIn-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#email {
+    background-image: url('Resources/Email-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#github {
+    background-image: url('Resources/GitHub-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 2px;
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+  
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+  .down-arrow {
+    animation: jumpInfinite 1.5s infinite;
+  }
