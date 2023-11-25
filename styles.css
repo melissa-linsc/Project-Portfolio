@@ -234,13 +234,24 @@ h2 {
 
 .about-page {
     display:flex;
-    /* height: 50rem; */
-    width: 100%;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .about-page-left {
-    margin: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 3rem;
+    justify-content: space-around;
+    align-items: center
+}
+
+.about-page-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem;
+    flex-grow: 5;
 }
 
 .about-me {
@@ -248,20 +259,20 @@ h2 {
   }
 
 .about-me-image {
-    background-color: #F7A797;
+    background-color:#B7D3E3;
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
     position: relative;
-    margin-left: 3.5rem;
 }
 
 .about-me-info {
+    display: flex;
     background-color: #F7A797;
-    width: 40rem;
     height: 20rem;
     border-radius: 3rem;
-    margin: 10rem 2rem 0rem 2rem;
+    flex-grow: 3;
+    width: 30rem;
 }
 
 .language-logo-container {
