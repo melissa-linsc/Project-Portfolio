@@ -16,31 +16,137 @@
 
 <body>
     <header>
-        <h1 class="logo">Melissa.</h1>
+        <h1 class="logo">MELISSA.</h1>
         <nav>
             <ul>
+                <li id="small-screen-logo">MELISSA.</li>
                 <li id="cv">CV</li>
                 <li id="about">About</li>
                 <li id="projects">Projects</li>
-                <li id="feedback">Feedback</li>
+                <!-- <li id="feedback">Feedback</li> -->
                 <li id="contact">Contact</li>
             </ul>
         </nav>
     </header>
     <div class="landing-page">
-        <div class="avatar">
-          <div class="circle"></div>
+        <div class="landing-page-image">
+            <div class="avatar"></div>
+            <div class="circle"></div>
         </div>
-            <h1>Melissa Lin</h1>
+            <h1 id="name">Melissa Lin</h1>
             <h2>Aspiring Full-Stack Developer</h2>
-        <div class="social-icons">
-            <div class="social-circle" id="linkedin"></div>
-            <div class="social-circle" id="email"></div>
-            <div class="social-circle" id="github"></div>
+        <div class="social-icon-container">
+            <div class="social-icons" id="social-icons">
+                <div class="social-circle" id="linkedin"></div>
+                <div class="social-circle" id="email"></div>
+                <div class="social-circle" id="github"></div>
+            </div>
         </div>
-        <div class="down-arrow"></div>
+        <div class="arrow-container">
+            <div class="down-arrow"></div>
+        </div>
     </div>
-    <div class="about-page"></div>
+    <section class="about-page">
+        <div class="about-page-left">
+            <h1 class="about-me">About Me</h1>
+            <div class='about-me-image'></div>
+            <div class="language-logo-container">
+                <img src="Resources/HTML5-logo.png" class="language-logo">
+                <img src="Resources/CSS3-logo.png" class="language-logo">
+                <img src="Resources/JS-logo.png" class="language-logo">
+            </div>
+        </div>
+        <div class="about-page-right">
+            <div class='about-me-info'></div>
+        </div>
+    </section>
+    <section class="experience-page">
+        <h1 class="experience">Experience</h1>
+        
+        <div class="experience-big-container">
+            
+            <div class="experience-container">           
+                <div class="education-container">
+                    <h2 class="education-title">Education</h2>
+                    <div class="education">
+                        <img src="Resources/Education-icon.png" class="experience-icon">
+                        <p><em><strong>Durham University BSc 2020-2023</strong></em><br>
+                            Upper Second Class Honours in Physics and Chemistry via Natural Sciences.</p>
+                    </div>
+                    <div class="education">
+                        <img src="Resources/Education-icon.png" class="experience-icon">
+                        <p><em><strong>Truro and Penwith College A Levels 2018-2020</strong></em><br>
+                            Physics A*, Chemistry A*, Mathematics A*.</p>
+                    </div>
+                    <div class="education">
+                        <img src="Resources/Education-icon.png" class="experience-icon">
+                        <p><em><strong>Truro School GCSEs 2018-2020</strong></em><br>
+                            12 GCSEs including 7 grade 9s, 4 A*s and 1 A.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-container">
+                <div class="work-container">
+                    <h2 class="work-title">Work</h2>
+                    <div class="work">
+                        <img src="Resources/Work-icon.png" class="experience-icon">
+                        <p><em><strong>Probus Surgical Centre 2018, 2023-Present</strong></em><br>
+                            Administrative assistant, receptionist and marketing.</p>
+                    </div>
+                    <div class="work">
+                        <img src="Resources/Work-icon.png" class="experience-icon">
+                        <p><em><strong>Patch Magazine, The Crossing Board 2021-Present</strong></em><br>
+                            Digital illustrator, with high proficiency in Procreate.</p>
+                    </div>
+                    <div class="work">
+                        <img src="Resources/Work-icon.png" class="experience-icon">
+                        <p><em><strong>Content Creator 2021-Present</strong></em><br>Creating social media content for brands as advertisements and organic media to showcase products and apps.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <section class="certifications-page">
+            <h1>Certifications</h1>
+            <div class="certifications-container">
+                <img src="Resources/certificate-icon.png" 
+                class="certificate-icon">
+                <div>
+                <div class="codecademy">
+                    <h2 id="codecademy-title">Codecademy</h2>
+                    <ul>
+                        <li>Building Interactive JavaScript Websites</li>
+                        <li>Learn Intermediate JavaScript</li>
+                        <li>Learn JavaScript</li>
+                        <li>Learn Python 3</li>
+                        <li>Learn Java</li>
+                        <li>Learn CSS</li>
+                        <li>Learn HTML</li>
+                    </ul>
+                </div>
+                <div class="fullstack-progress">
+                    <h3 id="fullstack-title">Currrently studying: Full Stack Engineer Career Path</h3>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress">29%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CFG">
+                    <h2 id="CFG-title">Code First Girls</h2>
+                    <ul>
+                        <li>Introduction to JavaScript 8 Week Sprint</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section></section>
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
