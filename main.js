@@ -1,3 +1,5 @@
+//Enlarging social icons on hovering
+
 const socialCircle = document.querySelectorAll('.social-circle')
 
 const socialIcons = document.getElementById('social-icons')
@@ -16,3 +18,16 @@ const reduceImg = (i) => {
     socialCircle[i].style.height = '5rem';
     socialCircle[i].style.width = '5rem';
 }
+
+//Enabling project cards to flip on click
+
+const projects = document.querySelectorAll(".project");
+
+function flipCard() {
+  this.classList.toggle("flip");
+}
+
+projects.forEach((project) => project.addEventListener("click", flipCard));
+
+
+
