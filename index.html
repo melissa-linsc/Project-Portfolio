@@ -20,17 +20,17 @@
         <nav>
             <ul>
                 <li id="small-screen-logo">MELISSA.</li>
-                <li id="cv">CV</li>
-                <li id="about">About</li>
-                <li id="projects">Projects</li>
+                <li id="cv"><a href="Melissa-Lin-CV.docx" download="Melissa Lin CV">CV</a></li>
+                <li id="about"><a href="#about-page-destination">About</a></li>
+                <li id="projects"><a href="#project-page-destination">Projects</a></li>
                 <!-- <li id="feedback">Feedback</li> -->
-                <li id="contact">Contact</li>
+                <li id="contact"><a href="#contact-page-destination">Contact</a></li>
             </ul>
         </nav>
     </header>
     <div class="landing-page">
         <div class="landing-page-image">
-            <div class="avatar"></div>
+            <div class="avatar" alt="Pixel drawing of Melissa Lin"></div>
             <div class="circle"></div>
         </div>
             <h1 id="name">Melissa Lin</h1>
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="arrow-container">
-            <div class="down-arrow"></div>
+            <div class="down-arrow" id="about-page-destination"></div>
         </div>
     </div>
     <section class="about-page">
@@ -58,7 +58,13 @@
             <img src="Resources/python-icon.png" class="language-logo" id="python-icon">
         </div>
         <div class="about-page-right">
-            <div class='about-me-info'></div>
+            <div class='about-me-info'>
+                <div class="about-me-text">
+                <p>Hi! Welcome to my portfolio website!</p>
+                <p>I discovered coding through learning python in my undergraduate degree for data manipulation and after further learning I have found a passion and aptitude for coding, particularly in web development.</p>
+                <p>I have a strong interest in both frontend and backend development as this combines my creative and logical traits and I hope to create beautiful, functional applications for seamless user experience.</p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="experience-page">
@@ -136,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="CFG">
+                <div class="CFG"  id="project-page-destination">
                     <h2 id="CFG-title">Code First Girls</h2>
                     <ul>
                         <li>Introduction to JavaScript 8 Week Sprint</li>
@@ -155,14 +161,18 @@
                     <div id="project1" class="project">
                         <div class="front">
                             <p>Project Portfolio Website</p>
+                            <img src="Resources/website-icon.png" class="website-icon">
                         </div>
                         <div class="back">
-                            <p>Hello</p>
+                            <p>This is the website you are visiting!</p>
+                            <p>I wanted a website to showcase the projects and things I have learnt while I study to become a full-stack developer. I first designed the general layout and colour scheme I wanted in Canva, before beginning to code. I had a lot of ideas which has made me learn a lot, such as making these project flip cards.</p>
+                            <p>Languages: HTML, CSS, JS</p>
                         </div>
                     </div>
                     <div id="project2" class="project">
                         <div class="front">
                             <p>Daily Water Tracker</p>
+                            <img src="Resources/water-drop.png" class="project-icon">
                         </div>
                         <div class="back">
                             <p>My final group project for the CFG Intro to JavaScript Sprint</p>
@@ -175,30 +185,79 @@
                     <div id="project3" class="project">
                         <div class="front">
                             <p>Company Landing Page</p>
+                            <img src="Resources/website-icon.png" class="website-icon"> 
                         </div>
                         <div class="back">
-                            <p>Hello</p>
+                            <p>I challenged myself to recreate the Stardew Valley landing page to practice the newly learnt flexbox model to create responsive websites and I added my own features like extra images and blue chicken dividers throughout the page 🐔.</p>
+                            <p>Languages: HTML, CSS</p>
                         </div>
                     </div>
                     <div id="project4" class="project">
                         <div class="front">
                             <p>Random Book Generator</p>
+                            <img src="Resources/book-icon.png" id="book-icon" class="project-icon">
                         </div>
                         <div class="back">
-                            <p>Hello</p>
+                            <p>This project brief was to create a random message generator, so I decided to create a web app that will give a random romance book and it's information from an array of objects.</p>
                         </div>
                     </div>
                     <div id="project5" class="project">
                         <div class="front">
-                            <p>Hello</p>
+                            <p>In Progress...</p>
                         </div>
                         <div class="back">
-                            <p>Hello</p>
+                            <p>Come back soon!</p>
                         </div>
+                        <div id="contact-page-destination"></div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="contact-page">
+            <h1>Contact Me</h1>
+            <p>Get into contact with me or leave some feedback on my site to help me improve!</p>
+            <form action="contact.php" method="POST" id="contact-form"> 
+                <div class="fullname-input">
+                    <div class="name-input">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div class="surname-input">
+                        <label for="surname">Last Name</label>
+                        <input type="text" name="surname" id="surname">
+                    </div>
+                </div>
+                    <div class="email-input">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="message-input">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="10" cols="50" minlength="10" maxlength="200" required>
+                    </textarea>
+                </div>
+                    <input type="submit" value="Send" class="submit">
+            </form>
+        </section>
+        <footer>
+            <div class="footer-left">
+                <h1 class="logo">MELISSA.</h1>
+            </div>
+            <!-- <div class="footer-middle">
+                <p >Get in Touch!</p>
+                <p >melissa.linsc@gmail.com</p>
+            </div> -->
+            <div class="footer-right">
+                <nav class="footer-nav">
+                    <a href="#about-page-destination">About</a>
+                    <a href="#project-page-destination">Projects</a>
+                    <a href="#contact-page-destination">Contact</a>
+                </nav>
+                <div class="by-melissa">
+                    <p>2023 Melissa. by Melissa Lin</p>
+                </div>
+            </div>
+        </footer>
     <script src="main.js"></script>
 </body>
 
