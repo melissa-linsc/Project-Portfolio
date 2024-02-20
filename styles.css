@@ -109,7 +109,7 @@ header nav li a:hover {
 }
 
 .landing-page {
-    height: 52rem;
+    height: 47rem;
     background-image: url('Resources/constellations.png');
     background-repeat: no-repeat;
     width: 100%;
@@ -118,6 +118,7 @@ header nav li a:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .landing-page-image {
@@ -157,11 +158,37 @@ h1 {
 #name {
     color: white;
     letter-spacing: 0.5rem;
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 0;
     margin-bottom: 1rem;
     font-weight: 800;
     font-family: 'Mulish', sans-serif;
+}
+
+.line-1{
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid white;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(45) 1s 1 normal both,
+             blinkTextCursor 500ms steps(45) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 25rem;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: black;}
+  to{border-right-color: transparent;}
 }
 
 h2 {
@@ -182,8 +209,8 @@ h2 {
     flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
-    position: absolute;
     z-index: 20;
+    position:absolute;
 }
 
 .social-circle {
@@ -191,9 +218,33 @@ h2 {
     background-color:#B7D3E3;
     height: 5rem;
     width: 5rem;
-    position: relative;
-    margin: 0rem 1rem;
+    margin-bottom: 10rem;
+    /* position: relative; */
     cursor: pointer;
+}
+
+#linkedin {
+    background-image: url('Resources/Linkedin-logo.png');
+    background-repeat: no-repeat;
+    background-size: 6.5rem;
+    background-position: center;
+    z-index: 3;
+}
+
+#email {
+    background-image: url('Resources/Email-logo.png');
+    background-repeat: no-repeat;
+    background-size: 6rem;
+    background-position: center;
+    z-index: 3;
+}
+
+#github {
+    background-image: url('Resources/GitHub-logo.png');
+    background-repeat: no-repeat;
+    background-size: 6.4rem;
+    background-position: center;
+    z-index: 3;
 }
 
 .down-arrow {
@@ -208,7 +259,7 @@ h2 {
 .down-arrow:after {
     content: " ";
     position: absolute;
-    top: 10px;
+    /* top: 10px; */
     left: 0.25rem;
     width: 1rem;
     height: 1rem;
@@ -246,7 +297,7 @@ h2 {
     flex-direction: column;
     margin: 1rem 3rem;
     justify-content: space-around;
-    align-items: center
+    align-items: center;
 }
 
 .about-page-right {
@@ -262,11 +313,14 @@ h2 {
   }
 
 .about-me-image {
-    background-color:#B7D3E3;
+    /* background-color:#B7D3E3; */
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
     position: relative;
+    background-image: url('Resources/me.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .aboutme-container {
@@ -275,7 +329,7 @@ h2 {
     min-width: 25rem;
     background-color: #F7A797;
     border-radius: 3rem;
-    margin: 1rem;
+    margin: 0rem;
     text-align: center;
     padding-bottom: 2rem;
     padding: 1rem;
@@ -284,17 +338,21 @@ h2 {
     max-width: 50rem;
 }
 
+.about-me-text {
+    margin: 2rem;
+    font-size: 1.25rem;
+}
+
 @media only screen and (max-width:860px) {
     .aboutme-container {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .about-me-text {
+        font-size: 1rem;
+    }
 }
 
-
-.about-me-text {
-    margin: 2rem;
-}
 
 .language-logo-container {
     display: flex;
@@ -381,6 +439,10 @@ p {
     min-width: 25rem;
 }
 
+.certifications-text {
+    font-size: 1.25rem;
+}
+
 @media only screen and (max-width:860px) {
     .certifications-container {
         margin: 1rem;
@@ -392,6 +454,7 @@ p {
         justify-content: center;
         min-width:20rem;
         margin: 0rem 1rem;
+        font-size: 1rem;
     }
     .progress-bar {
         max-width: 25rem;
@@ -617,6 +680,7 @@ h3 {
 .contact-page p {
     color:#3D5774;
     margin: 2rem 1rem;
+    font-size: 1.25rem;
 }
 
 #contact-form {
@@ -659,7 +723,7 @@ input, textarea {
     margin: 1rem;
 }
 
-#email, #message {
+#email-input, #message {
     width: 80%;
 }
 
@@ -710,6 +774,9 @@ form input, form textarea {
     #firstName, #surname {
         width: 60%;
     } 
+    .contact-page p {
+        font-size: 1rem;
+    }
 }
 
 footer {

@@ -4,6 +4,10 @@ const socialCircle = document.querySelectorAll('.social-circle')
 
 const socialIcons = document.getElementById('social-icons')
 
+const linkedin = document.getElementById('linkedin')
+const email = document.getElementById('email')
+const github = document.getElementById('github')
+
 socialCircle.forEach((circle, i) => {
     circle.addEventListener('mouseover', () => enlargeImg(i))
     circle.addEventListener('mouseout', () => reduceImg(i))

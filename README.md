@@ -1,4 +1,6 @@
 # Project-Portfolio
 
-This is my project portfolio website made using HTML CSS and Javascript.
+Welcome! 
+
+This is my first project portfolio website made using HTML CSS and Vanilla Javascript.
 
