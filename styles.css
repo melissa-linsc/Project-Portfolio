@@ -632,6 +632,10 @@ h3 {
     color:#3D5774;
 }
 
+#dictionary {
+    color:#F7A797;
+}
+
 .project.flip {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
