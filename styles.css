@@ -109,7 +109,7 @@ header nav li a:hover {
 }
 
 .landing-page {
-    height: 47rem;
+    height: 100vh;
     background-image: url('Resources/constellations.png');
     background-repeat: no-repeat;
     width: 100%;
@@ -513,7 +513,7 @@ h3 {
 
 .progress {
     height: 2rem;
-    width: 34%;
+    width: 41%;
     color: white;
     background-color: #F7A797;
     border-radius: 2rem;
