@@ -3,9 +3,10 @@
     margin: 0;
 }
 
-body {
+html,body {
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
+    margin: 0;
     overflow-x: hidden;
 }
 
@@ -24,7 +25,7 @@ header {
     color: #F7A797;
     padding: 1rem 1.5rem;
     font-family: 'Fredoka', sans-serif;
-    width: 20rem;
+    width: 18rem;
     float: left;
     margin:0;
 }
@@ -60,6 +61,10 @@ header nav li a:hover {
 
 @media only screen and (max-width:860px) {
 
+    /* body {
+        width: 70vh;
+    } */
+
     header {
         position: fixed;
         top: 0;
@@ -70,7 +75,7 @@ header nav li a:hover {
     
     header nav ul{
         float: none;
-        padding: 0;
+        padding: 1rem;
         display: grid;
         grid-template: repeat(3, 1fr) / 1fr 1fr;
         margin: 0;
@@ -78,7 +83,7 @@ header nav li a:hover {
     }
 
     header nav li {
-        padding: 0.1rem 4rem;
+        padding: 0.1rem 2rem 0.1rem 1rem;
     }
 
     header h1 {
@@ -107,6 +112,14 @@ header nav li a:hover {
         grid-area: 1 / 2 / span 1 / span 1;
     } */
 }
+
+/* @media only screen and (max-width: 450px) {
+    header {
+        width: 100%;
+    }
+} */
+
+/* landing page */
 
 .landing-page {
     height: 100vh;
@@ -158,7 +171,7 @@ h1 {
 #name {
     color: white;
     letter-spacing: 0.5rem;
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 0;
     margin-bottom: 1rem;
     font-weight: 800;
@@ -208,9 +221,9 @@ h2 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    align-content: center;
     z-index: 20;
     position:absolute;
+    padding: 0;
 }
 
 .social-circle {
@@ -218,9 +231,8 @@ h2 {
     background-color:#B7D3E3;
     height: 5rem;
     width: 5rem;
-    margin-bottom: 10rem;
-    /* position: relative; */
     cursor: pointer;
+
 }
 
 #in {
@@ -285,6 +297,10 @@ h2 {
     animation: jumpInfinite 1.5s infinite;
   }
 
+
+
+/* about page */
+
 .about-page {
     display:flex;
     flex-wrap: wrap;
@@ -326,16 +342,13 @@ h2 {
 .aboutme-container {
     /* height: 60rem; */
     display: flex;
-    min-width: 25rem;
     background-color: #F7A797;
     border-radius: 3rem;
     margin: 0rem;
     text-align: center;
     padding-bottom: 2rem;
     padding: 1rem;
-    flex-grow: 1;
-    flex-shrink: 1;
-    max-width: 50rem;
+    width: 90%;
 }
 
 .about-me-text {
