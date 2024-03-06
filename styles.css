@@ -682,6 +682,10 @@ h3 {
     .project {
         height: 20rem;
     }
+
+    .back p {
+        font-size: 0.9rem;
+    }
 }
 
 .contact-page {
