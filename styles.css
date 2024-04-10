@@ -479,16 +479,22 @@ p {
     margin: 0rem 2rem;
 }
 
-.codecademy, .CFG {
+.codecademy, .CFG, .northcoders {
     width: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
     /* flex-wrap: wrap; */
     margin: 1rem;
+
 }
 
-#codecademy-title, #CFG-title, #fullstack-title {
+.northcoders p {
+    color:#3D5774;
+}
+
+
+#codecademy-title, #CFG-title, #fullstack-title, #northcoders-title {
     color: #3D5774;
     text-align: center;
     align-self: flex-start;
@@ -496,7 +502,7 @@ p {
     padding: 0;
 }
 
-.codecademy ul, .CFG ul {
+.codecademy ul, .CFG ul, .northcoders ul {
     color: #3D5774;
 }
 
